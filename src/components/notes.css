@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.task_header {
+  background-color: #212429;
+  height: 60px;
+}
+.task_nav {
+  display: flex;
+
+  margin-left: 5px;
+  gap: 15px;
+}
+.task_nav h1 {
+  color: #fff;
+  margin-top: 15px;
+}
+.task_nav .logo {
+  color: #fff;
+  margin-top: 20px;
+}
+.task_main_container {
+  background-color: #779492;
+  height: 100vh;
+}
+.add_note{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text]{
+  width: 450px;
+  padding: 20px 50px;
+  margin-top: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.notes_list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  margin-top: 20px;
+  
+}
+.note {
+  background-color: #fff;
+  /* margin-bottom: 10px; */
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.del_icon :hover{
+    color: darkred;
+}
